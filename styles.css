@@ -226,9 +226,16 @@ footer i:hover {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding: 2rem;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    .navbar nav {
+        margin-bottom: 1rem;
+    }
+
+    .navbar .logo {
+        margin-top: 1rem;
     }
 
     .navbar ul {
@@ -240,9 +247,12 @@ footer i:hover {
         padding: 0;
 }
 
+    .navbar ul li:last-of-type a {
+        margin-right: 0;
+    }
+
     .content {
         flex-direction: column;
-        transform: translateY(-60px);
     }
 
     .flex-items {
@@ -305,8 +315,15 @@ footer i:hover {
         margin-top: 4rem;
     }
 
+    .team-flex .teamItem {
+        width: 100%;
+        margin-right: 0;
+    }
+   
+
     .teamItem {
         margin-bottom: 3rem;
+
     }
 
     .callback-form {
@@ -326,6 +343,10 @@ footer i:hover {
 
     .blog .row {
         flex-direction: column-reverse
+    }
+
+    #blogPage h2 {
+        margin-bottom: 0.5rem;
     }
 }
 
